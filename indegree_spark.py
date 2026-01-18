@@ -22,6 +22,7 @@ edges = (
     .filter(lambda line: not line.startswith('#'))
     .map(lambda line: line.split())
     .filter(lambda parts: len(parts) >= 2)
+    .repartition(4)
 )
 
 # In-degree: (destination, 1)

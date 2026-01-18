@@ -29,6 +29,7 @@ in_degrees = (
     edges
     .map(lambda parts: (parts[1], 1))
     .reduceByKey(lambda a, b: a + b)
+    .cache()
 )
 
 # Distribution: (degree, 1)
