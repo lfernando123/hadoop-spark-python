@@ -2,8 +2,17 @@ from pyspark import SparkContext
 
 sc = SparkContext(appName="InDegreeDistribution")
 
-input_path = "hdfs://namenode:9000/input/soc-pokec.txt"
-output_path = "hdfs://namenode:9000/output/pokec_spark"
+# input_path = "hdfs://namenode:9000/input/soc-pokec.txt"
+# output_path = "hdfs://namenode:9000/output/pokec_spark"
+
+# input_path = "hdfs://namenode:9000/input/email-euall.txt"
+# output_path = "hdfs://namenode:9000/output/email_spark"
+
+# input_path = "hdfs://namenode:9000/input/cit-patents.txt"
+# output_path = "hdfs://namenode:9000/output/patent_spark"
+
+input_path = "hdfs://namenode:9000/input/soc-LiveJournal1.txt"
+output_path = "hdfs://namenode:9000/output/livejournal_spark"
 
 # Load and parse edges
 data = sc.textFile(input_path)
