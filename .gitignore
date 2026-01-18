@@ -29,3 +29,6 @@ Thumbs.db
 *.sqlite3
 
 *.txt
+
+# folders
+results/
