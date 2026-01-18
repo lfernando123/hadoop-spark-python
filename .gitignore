@@ -31,4 +31,4 @@ Thumbs.db
 *.txt
 
 # folders
-results/
+results/*/
