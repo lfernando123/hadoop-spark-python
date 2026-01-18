@@ -11,7 +11,7 @@ def load_data(path):
     return degrees, counts
 
 # Example
-degrees, counts = load_data("results/pokec/part-r-00000")
+degrees, counts = load_data("results/livejournal2/part-r-00000")
 
 plt.figure()
 plt.scatter(degrees, counts, s=5)
@@ -19,7 +19,6 @@ plt.xscale("log")
 plt.yscale("log")
 plt.xlabel("In-degree")
 plt.ylabel("Number of nodes")
-plt.title("In-degree Distribution (soc-Pokec)")
+plt.title("In-degree Distribution (LiveJournal2)")
 plt.grid(True)
 plt.show()
-plt.savefig("plots/pokec_indegree_distribution.png")
